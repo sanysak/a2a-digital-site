@@ -35,8 +35,8 @@
       <div class="c_sevice_form_username_mail">
         <div class="c_sevice_form_feedback">
             <label for="country" class="sevice_form-label">How can we help you ?*</label>
-            <textarea v-model="feedback" class="form-control vresize c_sevice_form_input" id="c_form_fb" v-validate.initial="Feedback" data-rules="required"></textarea>
-            <p class="text-danger" v-if="errors.has('Feedback')">{{ errors.first('Feedback') }}</p>
+            <textarea v-model="feedback" class="form-control vresize c_sevice_form_input" id="c_form_fb" v-validate.initial="feedback" data-rules="required"></textarea>
+            <p class="text-danger" v-if="errors.has('feedback')">{{ errors.first('feedback') }}</p>
 
         </div>  
       </div>
