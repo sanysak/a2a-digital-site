@@ -93,6 +93,16 @@
                 });
             },
             closeMenu() {
+                this.styleCheck_service = 'none'
+                this.background_service = '#FFFFFF'
+                this.color_service = '#138690'
+                this.color_click_serivce = '#138690'
+                this.rotate_click_service = 'rotate(0)'
+                this.styleCheck_product = 'none'
+                this.background_product = '#FFFFFF'
+                this.color_product = '#138690'
+                this.rotate_click_product = 'rotate(0)'
+                this.color_click_product = '#138690'
                 this.$emit('closeMenu');
                 this.isSideBarOpen = false;
                 document.body.classList.remove('bm-overlay');
