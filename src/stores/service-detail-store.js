@@ -1,4 +1,3 @@
-
 import api from '../API/APIClient'
 
 export const ServiceDetailStore = {

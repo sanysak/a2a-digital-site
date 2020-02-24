@@ -7,8 +7,7 @@
             <div class="c_left">
                 <h1>Thank you</h1>
                 <h2>We ill get back to you soon.</h2> 
-            </div>
-                   
+            </div>       
         </div>
         <div class="c_goHome_btn">
             <button class="b_go_to_homepage"><router-link to="/">Go to Homepage</router-link></button>

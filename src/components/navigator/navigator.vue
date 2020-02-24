@@ -107,7 +107,7 @@
             documentClick(e) {
 
                 if (e.target.id === 'slide_service' && this.styleCheck_service == 'none') {
-                    this.styleCheck_service = 'block'
+                    this.styleCheck_service = 'inline-table'
                     this.background_service = '#138690'
                     this.styleCheck_product = 'none'
                     this.background_product = '#FFFFFF'
@@ -118,7 +118,7 @@
                     this.rotate_click_service = 'rotate(90deg)'
                     this.color_click_serivce = '#FFFFFF'
 
-                } else if (e.target.id === 'slide_service' && this.styleCheck_service == 'block') {
+                } else if (e.target.id === 'slide_service' && this.styleCheck_service == 'inline-table') {
                     this.styleCheck_service = 'none'
                     this.background_service = '#FFFFFF'
                     this.color_service = '#138690'

@@ -62,7 +62,7 @@
 
     <div id="c_form_title">
 
-      <form @submit.prevent="validateBeforeSubmit" v-if="!formSubmitted" v-else = "!formSubmitted">
+      <form @submit.prevent="validateBeforeSubmit" v-if="!formSubmitted">
 
       <div id="c_form_massage">
         <h1>Send Us A Message</h1>
@@ -103,8 +103,8 @@
         <div id="c_form_username_mail">
           <div class="c_form_feedback">
               <label for="country" class="form-label">How can we help you ?*</label>
-              <textarea v-model="feedback" class="form-control vresize" id="c_form_fb" v-validate.initial="Feedback" data-rules="required"></textarea>
-              <p class="text-danger" v-if="errors.has('Feedback')">{{ errors.first('Feedback') }}</p>
+              <textarea v-model="feedback" class="form-control vresize" id="c_form_fb" v-validate.initial="feedback" data-rules="required"></textarea>
+              <p class="text-danger" v-if="errors.has('feedback')">{{ errors.first('feedback') }}</p>
 
           </div>  
         </div>
@@ -120,11 +120,6 @@
       </div>  
 
       </form>
-      <div v-else>
-        
-        <h1 class="submitted">Form submitted successfully!</h1>
-      </div>
-
     </div>
   
   </div>

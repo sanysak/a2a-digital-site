@@ -19,7 +19,6 @@ export default {
     methods: {
         validateBeforeSubmit() {
             this.$validator.validateAll();
-
             if (!this.errors.any()) {
                 this.submitForm()
             }
