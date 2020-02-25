@@ -15,13 +15,13 @@ if (process.env.NODE_ENV === 'production') {
         },
         cached() {
             console.log('Content has been cached for offline use.')
-            alert('You can use offline now!')
         },
         updatefound() {
             console.log('New content is downloading.')
         },
         updated() {
             console.log('New content is available; please refresh.')
+            window.location.reload(true)
         },
         offline() {
             console.log('No internet connection found. App is running in offline mode.')
@@ -30,11 +30,4 @@ if (process.env.NODE_ENV === 'production') {
             console.error('Error during service worker registration:', error)
         }
     })
-
-    // let refreshing
-    // navigator.serviceWorker.addEventListener("controllerchange", e => {
-    //     if (refreshing) return
-    //     window.location.reload()
-    //     refreshing = true
-    // })
 }
