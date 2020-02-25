@@ -39,6 +39,7 @@ Vue.directive('scroll', {
     window.addEventListener('scroll', f);
   },
 });
+Vue.prototype.$scrollToTop = () => window.scrollTo(0,0)
 
 new Vue({
   router,
@@ -49,5 +50,5 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-
+window.router = router
 
